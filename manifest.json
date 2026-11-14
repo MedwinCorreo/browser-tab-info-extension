@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Tab Reference",
+  "version": "1.0.0",
+  "description": "Copy the current tab's browser name, title, URL, window ID, and tab ID.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Copy tab reference",
+    "default_popup": "popup.html"
+  }
+}

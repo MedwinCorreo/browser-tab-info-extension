@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab reference</title>
+    <link rel="stylesheet" href="popup.css">
+    <script type="module" src="popup.mjs"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Tab reference</h1>
+      <p>Copy this tab's details to your coding agent.</p>
+      <label for="browser">Browser</label>
+      <select id="browser">
+        <option value="">Choose your browser</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Brave">Brave</option>
+      </select>
+      <p class="hint">Your selection is remembered in this browser.</p>
+      <label for="reference">Reference</label>
+      <textarea id="reference" rows="8" readonly spellcheck="false" placeholder="Choose a browser to prepare the reference."></textarea>
+      <button id="copy" type="button" disabled>Copy tab reference</button>
+      <p id="status" role="status" aria-live="polite">Reading the current tab…</p>
+    </main>
+  </body>
+</html>
